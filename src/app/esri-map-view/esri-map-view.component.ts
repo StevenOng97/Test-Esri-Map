@@ -195,8 +195,7 @@ export class EsriMapViewComponent implements OnInit, OnDestroy {
     });
 
     this.map.add(layer);
-    console.log("Layer", layer);
-    this.hoverEvent();
+    // this.hoverEvent();
   }
 
   graphicConfiguration(geometryType: any, attributes?: any) {
