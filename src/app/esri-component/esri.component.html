@@ -1,0 +1,10 @@
+<div class="map-interactive-container py-3" *ngIf="focusLocation">
+  <app-esri-map-view
+    #esriMapView
+    id="map4"
+    [center]="focusLocation"
+    [zoom]="17"
+    (addGraphicEvent)="addPolygons()"
+  >
+  </app-esri-map-view>
+</div>

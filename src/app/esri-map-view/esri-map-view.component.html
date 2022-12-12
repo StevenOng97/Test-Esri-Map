@@ -1,0 +1,9 @@
+<div #mapViewNode></div>
+
+<div
+  #popupTemplate
+  class="d-flex flex-column gap-2 popup-template"
+  (click)="handleClick($event)"
+>
+  <div *ngIf="currentGraphicId">Hello {{ currentGraphicId }}</div>
+</div>
